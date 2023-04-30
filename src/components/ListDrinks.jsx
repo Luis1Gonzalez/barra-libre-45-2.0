@@ -1,6 +1,6 @@
 import { Row } from "react-bootstrap"
 import Drink from "./Drink"
-import useDrinks from "../hooks/usedrinks"
+import useDrinks from "../hooks/useDrinks"
 
 
 export default function ListDrink() {
