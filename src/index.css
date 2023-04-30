@@ -1,0 +1,35 @@
+header {
+  background-color: #EC3A49;
+  color: white;
+  text-align: center;
+}
+header h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+}
+
+.wrap-img{
+  display: flex;
+  justify-content: center;
+  height: 170px;
+  margin:50px;
+}
+
+.wrap-img img{
+  height: 100%;
+  box-shadow: 0 0 8px black;
+}
+
+@media (min-width: 640px) {
+  .wrap-img{
+    height: 270px;
+
+  }
+}
+
+@media (min-width: 1500px) {
+  .wrap-img{
+    height: 370px;
+
+  }
+}
