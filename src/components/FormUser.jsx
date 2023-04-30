@@ -1,7 +1,7 @@
 import { Button, Form, Row, Col, Alert } from 'react-bootstrap'
 import useCategory from '../hooks/useCategory'
 import { useState } from 'react'
-import useDrinks from '../hooks/usedrinks'
+import useDrinks from '../hooks/useDrinks'
 import useBase from '../hooks/useBase'
 
 

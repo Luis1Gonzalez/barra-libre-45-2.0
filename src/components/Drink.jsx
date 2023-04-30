@@ -1,5 +1,5 @@
 import { Col, Card, Button } from "react-bootstrap"
-import useDrinks from "../hooks/usedrinks"
+import useDrinks from "../hooks/useDrinks"
 
 
 export default function Drink({ oDrink }) {
