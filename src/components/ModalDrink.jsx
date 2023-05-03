@@ -23,9 +23,8 @@ export default function ModalDrink() {
 
     const closeModal = () => {
         setModal(false)
-        console.log(modal)
     }
-    console.log(modal)
+
     return (
 
         !charging && (
