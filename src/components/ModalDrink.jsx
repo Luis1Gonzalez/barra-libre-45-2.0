@@ -1,9 +1,11 @@
-import { Modal, Image } from 'react-bootstrap'
+import { Modal, Image, Button } from 'react-bootstrap'
 import useDrinks from '../hooks/useDrinks'
+
 
 export default function ModalDrink() {
 
-    const { modal, handleModalClick, recipe, charging } = useDrinks()
+    const { modal, handleModalClick, recipe, charging, setModal } = useDrinks()
+
 
     const showMix = () => {
         let mix = []
@@ -19,6 +21,11 @@ export default function ModalDrink() {
         return mix
     }
 
+    const closeModal = () => {
+        setModal(false)
+        console.log(modal)
+    }
+    console.log(modal)
     return (
 
         !charging && (
@@ -36,6 +43,10 @@ export default function ModalDrink() {
                         {recipe.strInstructions}
                         <h2>Ingredientes y Cantidad</h2>
                         {showMix()}
+                        <div className='d-flex justify-content-end'>
+                            <Button onClick={closeModal} variant='danger' className='fw-bold fs-6'>X</Button>
+                        </div>
+
                     </div>
                 </Modal.Body>
             </Modal>

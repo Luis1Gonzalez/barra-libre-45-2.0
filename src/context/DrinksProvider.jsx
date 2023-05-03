@@ -80,6 +80,7 @@ console.log(alert)
                 oneDrink,
                 handleModalClick,
                 modal,
+                setModal,
                 handleDrinkIdClick,
                 recipe,
                 alert
